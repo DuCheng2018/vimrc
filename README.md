@@ -29,8 +29,6 @@ rember to change the `with-pyton-config-dir`
 if python3 is wantted: (recommanded)
 
 ```
-./configure --with-features=huge --enable-rubyinterp --enable-luainterp --enable-perlinterp  --with-python3-command=python3 --with-python3-config-dir=/your/python3/config_file/dir --enable-python3interp --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --with-lua-prefix=/usr/local
-
 ./configure --with-features=huge --enable-rubyinterp --enable-luainterp --enable-perlinterp --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --with-lua-prefix=/usr/local/ --enable-python3interp vi_cv_path_python3=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 vi_cv_path_python3_pfx=/Library/Frameworks/Python.framework/Versions/3.7/
 
 ```
