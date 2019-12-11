@@ -1,7 +1,7 @@
 #!/usr/bin/python
-import os,sys
+import os
 
-vimrc_location =  sys.path[0]
+vimrc_location =  os.getcwd()
 user_home = os.environ.get('HOME')
 
 for file_name in os.listdir(vimrc_location):

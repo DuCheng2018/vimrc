@@ -9,6 +9,7 @@ In Ubuntu, some packages are needed to be installed to complie Vim.
 sudo apt install libncurses5-dev python-dev perl libperl-dev ruby ruby-dev lua5.3 liblua5.3 liblua5.3-dev
 ```
 
+(use with-lua-prefix instead) 
 Some time,headers and shared library should be soft linked to correct location.
 ```
 sudo ln -sf /usr/include/lua5.3/*.* /usr/include
@@ -25,10 +26,12 @@ In Ubuntu, you need to complie Vim form source,when config you need to run this
 rember to change the `with-pyton-config-dir`
 
 
-if python3 is wantted:
+if python3 is wantted: (recommanded)
 
 ```
-./configure --with-features=huge --enable-rubyinterp --enable-luainterp --enable-perlinterp  --with-python3-command=python3.5 --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu --enable-python3interp --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing
+./configure --with-features=huge --enable-rubyinterp --enable-luainterp --enable-perlinterp  --with-python3-command=python3 --with-python3-config-dir=/your/python3/config_file/dir --enable-python3interp --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --with-lua-prefix=/usr/local
+
+./configure --with-features=huge --enable-rubyinterp --enable-luainterp --enable-perlinterp --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --with-lua-prefix=/usr/local/ --enable-python3interp vi_cv_path_python3=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 vi_cv_path_python3_pfx=/Library/Frameworks/Python.framework/Versions/3.7/
 
 ```
 
@@ -42,7 +45,7 @@ The spf-13 i forked control plugins with vim-plug,you can install this version b
 curl https://raw.githubusercontent.com/rxy0424/spf13-vim/feature/vim-plug/bootstrap.sh -L > spf13-vim.sh && sh spf13-vim.sh
 ```
 ## 4. Complie YouCompleteMe.
-if you use ArchLinux
+if you use ArchLinux or Macos
 ```
 sudo pacman -S python-pip clang
 cd ~/.vim/bundle/YouCompleteMe
