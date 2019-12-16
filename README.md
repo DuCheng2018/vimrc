@@ -32,6 +32,7 @@ if python3 is wantted: (recommanded)
 ./configure --with-features=huge --enable-rubyinterp --enable-luainterp --enable-perlinterp --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --with-lua-prefix=/usr/local/ --enable-python3interp vi_cv_path_python3=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 vi_cv_path_python3_pfx=/Library/Frameworks/Python.framework/Versions/3.7/
 
 ```
+If you compile vim using offline package, you need to remove ./src/auto/config.cache firstly.
 
 ## 2. Install my conig
 1.  git clone https://github.com/rxy0424/vimrc.git
