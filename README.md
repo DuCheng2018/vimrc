@@ -9,7 +9,10 @@ In Ubuntu, some packages are needed to be installed to complie Vim.
 sudo apt install libncurses5-dev python-dev perl libperl-dev ruby ruby-dev lua5.3 liblua5.3 liblua5.3-dev
 ```
 
-(use with-lua-prefix instead) 
+Install oh-my-zsh:
+if you need install it offline and locally, please make sure your zsh version is correct.  
+
+Maybe deprecated in fulture (use with-lua-prefix instead). 
 Some time,headers and shared library should be soft linked to correct location.
 ```
 sudo ln -sf /usr/include/lua5.3/*.* /usr/include
