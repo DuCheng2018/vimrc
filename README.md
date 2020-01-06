@@ -62,6 +62,28 @@ if you use Ubuntu
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
+
+```
+if you need to compile clang, please use following cmake config
+cmake -G "Unix Makefiles"  \
+ -DCMAKE_C_COMPILER=gcc \
+ -DCMAKE_CXX_COMPILER=g++ \
+ -DCMAKE_BUILD_TYPE=Release \
+ -DCMAKE_INSTALL_PREFIX=/home/chengdu01/clang  \
+ -DLLVM_TARGETS_TO_BUILD=all  \
+ -DLLVM_INCLUDE_EXAMPLES=OFF  \
+ -DLLVM_INCLUDE_TESTS=OFF  \
+ -DLLVM_INCLUDE_GO_TESTS=OFF  \
+ -DLLVM_INCLUDE_DOCS=OFF  \
+ -DLLVM_ENABLE_TERMINFO=OFF  \
+ -DLLVM_ENABLE_ZLIB=OFF  \
+ -DLLVM_ENABLE_LIBEDIT=OFF  \
+ -DLLVM_ENABLE_LIBXML2=OFF  \
+  ../
+(A release build implies LLVM_ENABLE_ASSERTIONS=OFF)
+Please reference the python script downloaded from https://github.com/ycm-core/llvm/releases
+```
+
 ## 5. Install tmux >= 2.1
 install tmux >=2.1 and [oh-my-tmux](https://github.com/gpakosz/.tmux), you need xsel for copying to system clipboard,
 
