@@ -26,7 +26,7 @@ In Ubuntu, you need to complie Vim form source,when config you need to run this
 ```
 ./configure --with-features=huge --enable-pythoninterp --enable-rubyinterp --enable-luainterp --enable-perlinterp --with-python-config-dir=/usr/lib/python2.7/config/ --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing
 ```
-rember to change the `with-pyton-config-dir`
+remmber to change the `with-pyton-config-dir`
 
 
 if python3 is wanted: (recommanded, may be used in YCM)
@@ -35,7 +35,7 @@ if python3 is wanted: (recommanded, may be used in YCM)
 ./configure --with-features=huge --enable-rubyinterp --enable-luainterp --enable-perlinterp --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --with-lua-prefix=/usr/local/ --enable-python3interp vi_cv_path_python3=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 vi_cv_path_python3_pfx=/Library/Frameworks/Python.framework/Versions/3.7/
 
 ```
-If you want to compile vim offline, you need to remove ./src/auto/config.cache firstly and config by you environment.
+If you want to compile vim offline, you need to remove ./src/auto/config.cache firstly and config it by you environment.
 
 ## 2. Install my conig
 1.  git clone https://github.com/rxy0424/vimrc.git
