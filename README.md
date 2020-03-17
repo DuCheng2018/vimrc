@@ -29,7 +29,7 @@ In Ubuntu, you need to complie Vim form source,when config you need to run this
 rember to change the `with-pyton-config-dir`
 
 
-if python3 is wantted: (recommanded)
+if python3 is wanted: (recommanded, may be used in YCM)
 
 ```
 ./configure --with-features=huge --enable-rubyinterp --enable-luainterp --enable-perlinterp --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --with-lua-prefix=/usr/local/ --enable-python3interp vi_cv_path_python3=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 vi_cv_path_python3_pfx=/Library/Frameworks/Python.framework/Versions/3.7/
