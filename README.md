@@ -38,7 +38,7 @@ if python3 is wanted: (recommanded, may be used in YCM)
 If you want to compile vim offline, you need to remove ./src/auto/config.cache firstly and config it by you environment.
 
 ## 2. Install my conig
-1.  git clone https://github.com/rxy0424/vimrc.git
+1.  git clone https://github.com/DuCheng2018/vimrc.git
 2.  run ./install.py in vimrc directory
 
 ## 3. Install the changed [spf-13](https://github.com/rxy0424/spf13-vim)
